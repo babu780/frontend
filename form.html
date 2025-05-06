@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+</head>
+<body>
+    <form action="server">
+        <div>
+Username
+<input type="text" name = "username" placeholder = "Enter your username" required>
+</div>
+<div>
+    password
+    <input type="password" name = "password" placeholder = "Enter your password" required>
+</div>
+        
+ <div>emailaddress
+
+    <input type="email" name = "email" placeholder = "Enter your email" required>
+    </div>
+    <div> date of birth
+        <input type="date" name = "date" placeholder = "Enter your date" required></div>
+ 
+        <button type="submit">Submit</button>
+        <button type="reset">clear my form</button>
+        <button type="button" onclick="alert('you click me!')">Alert</button>
+        <button type="button" onclick="window.location.href='https://www.walmart.com'">Go to walmart</button>
+        <button type="button" onclick="window.location.href='https://www.amazon.com'">Go to amazon</button>
+        <input type="submit" value="Login" formaction="https://www.cvs.com/login">
+    </div>    
+
+    </form>
+    <form>
+        <hr>
+        <h1>Welcome to my html class part 2</h1>
+        
+
+    </form>
+    <form action="https://www.google.com">
+        <input type="text" name="search" placeholder="Search Google">
+        <input type="submit" value="Search">
+    </form>
+        <div>
+            <hr>
+            <input type="checkbox" name="age">
+            <label for="age">I am 18 years old or older</label>
+        </div>    </form>
+    <form>
+        <hr>
+        <div>
+            <select name="profession"> id="profession" required>
+                <option value="" disabled selected>Select your profession</option>
+                <option value="doctor">Doctor</option>
+                <option value="engineer">Engineer</option>
+                <option value="teacher">Teacher</option>
+                <option value="nurse">Nurse</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                </select>
+        </div>
+        <div>
+
+            <input type="range" min"0" max="100" value="50" id="volume" name="volume"step="10" required>
+            <label for="volume">Volume</label>
+        </div>
+        <div>
+            please enter your feedback
+            <textarea name="feedback" rows="4" cols="100" placeholder="Enter your feedback here"></textarea>
+        </div>
+    </form>
+
+</body>
+</html>
