@@ -1,0 +1,33 @@
+
+Copy
+// Define the ball properties
+let x, y; // Position of the ball
+let diameter = 50; // Size of the ball
+let speedY = 3; // Vertical speed of the ball
+
+function setup() {
+  createCanvas(400, 400); // Create a canvas 400x400 pixels
+  x = width / 2; // Start X position in the middle
+  y = height / 2; // Start Y position in the middle
+}
+
+function draw() {
+  background(220); // Clear the canvas with a light gray color
+  
+  // Draw the ball (cartoon character)
+  fill(255, 0, 0); // Red color for the ball
+  ellipse(x, y, diameter, diameter); // Draw the ball at (x,y)
+  
+  // Update ball position
+  y += speedY; // Move the ball down
+
+  // Bounce the ball off the bottom of the canvas
+  if (y > height - diameter / 2) {
+    speedY *= -1; // Reverse direction
+  }
+
+  // Bounce the ball off the top of the canvas
+  if (y < diameter / 2) {
+    speedY *= -1; // Reverse direction
+  }
+}
